@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Status</title>
+</head>
+<body>
+    <h1>Student Status</h1>
+    <form id="statusForm">
+        <label for="searchName">Enter Student Name:</label>
+        <input type="text" id="searchName" required><br><br>
+
+        <button type="button" onclick="getStatus()">Get Status</button>
+    </form>
+
+    <div id="statusArea"></div>
+
+    <script>
+        function getStatus() {
+            const searchName = document.getElementById('searchName').value;
+            const student = JSON.parse(localStorage.getItem(searchName));
+
+            if (student) {
+                document.getElementById('statusArea').innerHTML = `
+                    <h2>Student Information</h2>
+                    <p>Student Name: ${student.studentName}</p>
+                    <p>Parent Name: ${student.parentName}</p>
+                    <p>Age: ${student.age}</p>
+                    <p>Primary School: ${student.primarySchool}</p>
+                    <p>Previous School: ${student.beforeSchool}</p>
+                    <p>Form: ${student.form}</p>
+                    <p>Status: Active</p>
+                `;
+            } else {
+                document.getElementById('statusArea').innerHTML = "<p>No student found with that name.</p>";
+            }
+        }
+    </script>
+</body>
+</html>
