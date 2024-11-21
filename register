@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+<style type="text/css">
+body h1 {
+    color: #46D3FF;
+}
+#registrationForm label {
+    color: #F3FF00;
+}
+body {
+    color: #FEFEFE;
+    background-color: #3C3C3C;
+    background-image: url(url);
+}
+#registrationForm label {
+}
+#registrationForm label {
+}
+#registrationForm label {
+}
+#registrationForm label {
+}
+#registrationForm label {
+}
+body h1 img {
+}
+body script {
+    color: #1AFF17;
+}
+body script {
+    color: #38FF59;
+}
+body script {
+}
+</style>
+</head>
+<body>
+    <h1 align="center"><img src="../dreamweaver/ggg.jpg " width="200" height="250" alt=""></h1>
+    <h1><strong>Student Registration</strong></h1>
+<form id="registrationForm">
+  <label for="studentName"><strong>Student Name:</strong></label>
+        <input type="text" id="studentName" required><br><br>
+
+        <label for="parentName"><strong>Parent Name:</strong></label>
+        <input type="text" id="parentName" required><br><br>
+
+        <label for="age"><strong>Age:</strong></label>
+        <input type="number" id="age" required><br><br>
+
+        <label for="primarySchool"><strong>Primary School:</strong></label>
+        <input type="text" id="primarySchool" required><br><br>
+
+        <label for="beforeSchool"><strong>Previous School:</strong></label>
+        <input type="text" id="beforeSchool"><br><br>
+
+        <label for="form"><strong>Form:</strong></label>
+        <input type="number" id="form" required><br><br>
+
+        <button type="button" onclick="saveStudent()">Save</button>
+        <button type="button" onclick="displayDetails()">Display Details</button>
+    </form>
+
+    <div id="displayArea"></div>
+
+    <script>
+        function saveStudent() {
+            const studentName = document.getElementById('studentName').value;
+            const parentName = document.getElementById('parentName').value;
+            const age = document.getElementById('age').value;
+            const primarySchool = document.getElementById('primarySchool').value;
+            const beforeSchool = document.getElementById('beforeSchool').value;
+            const form = document.getElementById('form').value;
+
+            if (studentName && parentName && age && primarySchool && form) {
+                const student = {
+                    studentName: studentName,
+                    parentName: parentName,
+                    age: age,
+                    primarySchool: primarySchool,
+                    beforeSchool: beforeSchool,
+                    form: form
+                };
+
+                localStorage.setItem(studentName, JSON.stringify(student));
+                alert("Student saved successfully!");
+            } else {
+                alert("Please fill in all required fields.");
+            }
+        }
+
+        function displayDetails() {
+            const studentName = document.getElementById('studentName').value;
+            const student = JSON.parse(localStorage.getItem(studentName));
+
+            if (student) {
+                document.getElementById('displayArea').innerHTML = `
+                    <h1>Student Details</h1>
+                    <p>Student Name: ${student.studentName}</p>
+                    <p>Parent Name: ${student.parentName}</p>
+                    <p>Age: ${student.age}</p>
+                    <p>Primary School: ${student.primarySchool}</p>
+                    <p>Previous School: ${student.beforeSchool}</p>
+                    <p>Form: ${student.form}</p>
+                `;
+            } else {
+                document.getElementById('displayArea').innerHTML = "<p>No student found with that name.</p>";
+            }
+        }
+    </script>
+</body>
+</html>
