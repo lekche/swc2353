@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - Prebuilt Layout</title>
+
+    <!-- Bootstrap -->
+    <link href="../dreamweaver/css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="../dreamweaver/styles.ccs.css" rel="stylesheet" type="text/css">
+  </head>
+  <body style="padding-top: 70px">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#"><img src="../dreamweaver/Sekolah_Menengah_Kebangsaan_Puchong_Utama_(1).jpg" alt="" width="50" height="63" class="img-fluid rounded-circle"/>&nbsp;</a><a class="navbar-brand" href="#"><strong><em>SMK PU 1&nbsp;</em></strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"> </li>
+      <li class="nav-item"> <a class="nav-link" href="contact.html">Contact us&nbsp;</a> </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> About us </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="background school.html">Backgroud</a> 
+			<a class="staff sekolah.html"></a></div>
+          
+      </li>
+      <li class="nav-item"> <a class="nav-link disabled" href="#">&nbsp;</a> </li>
+    </ul>
+    <form>
+    </form>
+  </div>
+</nav>
+<img src="../dreamweaver/LM.png" width="1237" height="692" alt=""/>
+
+    
+    <div class="container"> <br>
+       <hr>
+       <br>
+       <div class="row">
+          <div class="col-md-4">
+             <div class="card">
+                <img src="../dreamweaver/TEACHER.jpg" alt="Card image cap" width="294" height="402" class="card-img-top">
+                <div class="card-body"> <a href="senarai guru sekolah.html"><strong>TEACHER</strong></a>
+<p class="card-text">The desire to make a difference in terms of education in the lives of students&nbsp;</p>
+                   <br><br>
+</div>
+             </div>
+          </div>
+          <div class="col-md-4">
+             <div class="card"> </div>
+             <br>
+             <br/>
+             <div class="card">
+                <div class="card-header">
+                OTHERS&nbsp; </div>
+                <ul class="list-group list-group-flush">
+                   <a href="kokurikulum sekolah.html"><strong>curriculum detail &nbsp;</strong></a>
+                </ul>
+<a href="status.html"></a><a href="register.html"><strong>register</strong></a><a href="status.html"><strong>Status register</strong></a><a href="#"></a> </div>
+          </div>
+          <div class="col-md-4">
+             <div class="card">
+                <img src="../dreamweaver/CLAASROOM.jpg" alt="Card image cap" width="708" height="397" class="card-img-top">
+                <div class="card-body"> <a href="kelas.html"><strong>CLASSROOM</strong></a>
+<p class="card-text">A student's willingness and desire to learn.&nbsp;</p>
+                </div>
+<div class="card-body"> </div>
+             </div>
+          </div>
+       </div>
+       <br/>
+       <br/>
+<br/>
+       <br/>
+<br>
+       <hr>
+       <div class="row">
+          <div class="text-center col-lg-6 offset-lg-3">
+             <h4>ADDRESS&nbsp; </h4>
+             <p><a href="#"><strong>Jalan PU 5, Taman Puchong Utama, 47150 Puchong, Selangor</strong>&nbsp;</a></p>
+          </div>
+       </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="../dreamweaver/js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="../dreamweaver/js/popper.min.js"></script>
+  <script src="../dreamweaver/js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
